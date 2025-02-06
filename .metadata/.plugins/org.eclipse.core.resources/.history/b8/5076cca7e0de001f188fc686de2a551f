@@ -1,7 +1,0 @@
-package Orientacionobjetos;
-
-public class GestionaGato {
-	public static void main(String[] args) {
-		
-	}
-}
