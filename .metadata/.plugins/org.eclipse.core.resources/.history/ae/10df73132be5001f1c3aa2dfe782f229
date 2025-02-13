@@ -1,0 +1,17 @@
+package Boletin3OrientacionObjetos;
+
+import java.time.LocalDate;
+
+public class GestionBanco {
+
+    public static void main(String[] args) {
+
+        Persona titular = new Persona ("123456789A","Juan", "Perez", LocalDate.of(104, 10, 12));
+
+        
+        CuentaBancaria cuenta = new CuentaBancaria(0.0, "ES022323232323232323232323",titular);
+        
+        cuenta.setSaldo(100);
+    }
+
+}

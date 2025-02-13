@@ -1,3 +1,15 @@
 1738740903825	Delete element
 1738740908866	Delete element
 1738744010667	Rename type 'GestionaTorneo'
+1738912873309	Rename type 'Ej2Persona'
+1738912887685	Rename type 'Ej2CuentaBancaria'
+1738914828413	Rename package 'Boletin3orientacion'
+1738914849615	Rename compilation unit 'Ej3CuentaBancaria.java'
+1738915099687	Rename package 'Boletin3OrientacioObjetos'
+1738915913244	Delete element
+1738915940223	Rename type 'Ej3Persona'
+1738915997255	Move compilation unit
+1738916003731	Move compilation unit
+1738916007321	Move compilation unit
+1738916014747	Delete element
+1738916136818	Rename package 'Boletin3Ej4'

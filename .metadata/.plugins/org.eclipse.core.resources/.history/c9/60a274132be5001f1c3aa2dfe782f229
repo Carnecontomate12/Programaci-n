@@ -1,0 +1,55 @@
+package Boletin3OrientacionObjetos;
+
+public class CuentaBancaria {
+
+    private double saldo;
+    private String numCuenta;
+    private Persona titular;
+//    private Persona autorizadoPersona;
+    
+    public CuentaBancaria(double saldo, String numCuenta, Persona titular) {
+        super();
+        this.saldo = saldo;
+        this.numCuenta = numCuenta;
+        this.titular = titular;
+//        this.autorizadoPersona = autorizadoPersona;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public String getNumCuenta() {
+        return numCuenta;
+    }
+
+    public void setNumCuenta(String numCuenta) {
+        this.numCuenta = numCuenta;
+    }
+
+    public Persona getTitular() {
+        return titular;
+    }
+
+    public void setTitular(Persona titular) {
+        this.titular = titular;
+    }
+    
+
+    private boolean validacionImportePositivo(double importe) {
+        
+        return importe > 0;
+        
+    }
+    
+    private boolean validarAutorizado (String dni) {
+        
+        return dni != null && dni.equals(titular.dn);
+        
+    }
+    
+}

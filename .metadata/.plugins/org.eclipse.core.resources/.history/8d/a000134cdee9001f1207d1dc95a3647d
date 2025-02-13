@@ -1,0 +1,9 @@
+package Ejercicio1Boletin5Orientación;
+
+public class Arquero extends Personaje{
+
+	public Arquero(String nombre, String arma, int nivel, int hp) {
+		super(nombre, arma, nivel, hp);
+	}
+	
+}

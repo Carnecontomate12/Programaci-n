@@ -1,0 +1,16 @@
+package ProyectoEntorno;
+
+import java.util.Scanner;
+
+public class Ejercicio1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		char [] letras = {'Q','W','E','R','T','Y','U','I','O','P','A','S','D','F','G','H','J','K','L','Ñ','Z','X','C','V','B','N','M'};
+		
+		System.out.println("Introuduce 8 dígitos para poder completar el DNI");
+		int dni = input.nextInt();
+		
+		char letra = letras [dni % 23];
+		System.out.println("La letra del DNI es la siguiente: "+ letra);
+	}
+}

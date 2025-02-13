@@ -1,0 +1,7 @@
+package Ejercicio1Boletin5Orientación;
+
+public class GestionaJuego {
+	public static void main(String[] args) {
+		Caballero c1 = new Caballero ("Puerto",2,100,"Navaja");
+	}
+}

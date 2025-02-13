@@ -1,0 +1,21 @@
+package Boletin3orientacion;
+
+import java.time.LocalDate;
+
+public class Persona {
+	String nombre;
+	String Apellido;
+	String DNI;
+	int edad;
+	public Persona(String nombre, String apellido, String dNI, LocalDate localDate) {
+		super();
+		this.nombre = nombre;
+		Apellido = apellido;
+		DNI = dNI;
+		this.edad = localDate;
+	}
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", Apellido=" + Apellido + ", DNI=" + DNI + ", edad=" + edad + "]";
+	}
+}

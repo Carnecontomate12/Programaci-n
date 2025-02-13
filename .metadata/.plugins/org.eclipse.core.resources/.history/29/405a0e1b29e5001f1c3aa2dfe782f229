@@ -1,0 +1,49 @@
+package Boletin3OrientacioObjetos;
+
+public class CuentaBancaria {
+	private double saldo;
+	private String numCuenta;
+	private Persona titular;
+	//private Persona autorizadoPersona;
+	public CuentaBancaria(double saldo, String numCuenta, Persona titular, Persona autorizadoPersona) {
+		super();
+		this.saldo = saldo;
+		this.numCuenta = numCuenta;
+		this.titular = titular;
+		//this.autorizadoPersona = autorizadoPersona;
+	}
+	public CuentaBancaria(double d, String string, Ej3Persona titular2) {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	public String getNumCuenta() {
+		return numCuenta;
+	}
+	public void setNumCuenta(String numCuenta) {
+		this.numCuenta = numCuenta;
+	}
+	public Persona getTitular() {
+		return titular;
+	}
+	public void setTitular(Persona titular) {
+		this.titular = titular;
+	}
+	//public Persona getAutorizadoPersona() {
+		//return autorizadoPersona;
+	//}
+	//public void setAutorizadoPersona(Persona autorizadoPersona) {
+		//this.autorizadoPersona = autorizadoPersona;
+	//}
+	private boolean validacionImportePositivo (double importe) {
+		return importe > 0;
+	}
+	private boolean validarAutorizado (String DNI) {
+		return DNI.equals(titular.));
+	}
+}
