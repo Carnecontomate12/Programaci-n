@@ -1,0 +1,7 @@
+package MiniSimulacion;
+
+public class GestionAutos {
+	public static void main(String[] args) {
+		Conductor c1 = new Conductor("Juan", 10);
+	}
+}

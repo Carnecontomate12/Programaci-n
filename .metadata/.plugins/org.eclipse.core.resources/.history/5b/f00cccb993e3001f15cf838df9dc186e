@@ -1,7 +1,0 @@
-package Orientacionobjetos;
-
-public class Persona {
-	String nombre;
-	String Apellido;
-	String DNI;
-}

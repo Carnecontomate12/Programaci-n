@@ -1,5 +1,7 @@
 package Boletin4Ej1;
 
+import java.util.Objects;
+
 public class Automovil extends Vehiculo{
 	private String propietario;
 	private int numPuertas;
@@ -36,6 +38,20 @@ public class Automovil extends Vehiculo{
 	}
 	public void setCalificaionEcologica(String calificaionEcologica) {
 		this.calificaionEcologica = calificaionEcologica;
+	}
+	private enum CalificacionEco{
+		ECO, O, B, C;
+	}
+	CalificacionEco eco = CalificacionEco.ECO;
+
+	public CalificacionEco getEco() {
+		return eco;
+	}
+	public void setEco(CalificacionEco eco) {
+		if (CalificacionEco == CalificacionEco.ECO) {
+			
+		}
+		this.eco = eco;
 	}
 	
 }
