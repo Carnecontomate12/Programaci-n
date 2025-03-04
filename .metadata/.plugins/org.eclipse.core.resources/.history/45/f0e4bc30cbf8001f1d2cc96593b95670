@@ -1,0 +1,10 @@
+package Modelo;
+
+public class Gato extends Animal{
+	String getSonidoQueEmite() {
+		return "miau";
+	}
+	String getAlimento () {
+		return "pescado";
+	}
+}

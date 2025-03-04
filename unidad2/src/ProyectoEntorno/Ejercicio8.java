@@ -17,7 +17,7 @@ public class Ejercicio8 {
 	        while (inicio <= fin) {
 	            int medio = inicio + (fin - inicio) / 2;
 	            if (array[medio] == elementoBuscar) {
-	                return medio - 1;
+	                return medio + 1;
 	            } else if (array[medio] < elementoBuscar) {
 	                inicio = medio + 1;
 	            } else {

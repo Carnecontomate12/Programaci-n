@@ -1,0 +1,10 @@
+package Controlador;
+
+import Modelo.Perro;
+import Modelo.Gato; 
+
+public class GestionaAnimales {
+	public static void main(String[] args) {
+		Animal 
+	}
+}

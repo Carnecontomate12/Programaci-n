@@ -1,9 +1,0 @@
-package Ejercicio1Boletin5Orientación;
-
-public class Mago extends Personaje{
-
-	public Mago(String nombre, String arma, int nivel, int hp) {
-		super(nombre, arma, nivel, hp);
-	}
-	
-}

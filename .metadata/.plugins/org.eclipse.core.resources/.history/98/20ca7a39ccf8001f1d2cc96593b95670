@@ -1,0 +1,10 @@
+package Modelo;
+
+public class Animal {
+	public String getSonidoQueEmite() {
+		return "";
+	}
+	public String getAlimento () {
+		return "";
+	}
+}

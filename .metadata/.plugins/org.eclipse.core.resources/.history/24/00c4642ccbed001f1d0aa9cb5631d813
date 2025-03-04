@@ -1,7 +1,0 @@
-package SimulacroOrientacion;
-
-public class Empleado {
-	String nombre;
-	String DNI;
-	int Salariobase;
-}

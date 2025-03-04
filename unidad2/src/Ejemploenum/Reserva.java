@@ -1,7 +1,7 @@
 package Ejemploenum;
 
 public class Reserva {
-		private enum Mes {
+		public enum Mes {
 			ENERO, FEBRERO, MARZO, ABRIL, MAYO,
 			JUNIO, JULIO, AGOSTO,SEPTIEMBRE, OCTUBRE, 
 			NOVIEMBRE, DICIEMBRE;

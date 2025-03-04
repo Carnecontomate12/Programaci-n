@@ -1,9 +1,0 @@
-package SimulacroOrientacion;
-
-public class Administrativo extends Empleado{
-
-	public Administrativo(String nombre, String dNI, int salariobase) {
-		super(nombre, dNI, salariobase);
-	}
-	
-}

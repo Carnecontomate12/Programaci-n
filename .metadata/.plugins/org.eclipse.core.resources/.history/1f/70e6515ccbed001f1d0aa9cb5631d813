@@ -1,4 +1,0 @@
-package SimulacroOrientacion;
-
-public class Administrativo extends Empleado{
-}
