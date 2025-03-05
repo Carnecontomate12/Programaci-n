@@ -1,0 +1,5 @@
+package Modelo.robots;
+
+public enum Ensamblador extends Robots{
+
+}
