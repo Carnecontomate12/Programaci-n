@@ -1,0 +1,7 @@
+package Modelo.Refactoriza;
+
+public class GestionaPersonaRefactoriza {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,13 @@
+package Controlador;
+
+import Modelo.Refactoriza.*;
+
+public class GestionaPersonasRefactoriza {
+	public static void main(String[] args) {
+
+	PersonaRefactoriza carlos = new PersonaRefactoriza ("Carlos R.");
+	IAccion[] acciones = carlos.getAcciones();
+	acciones[0] = new Estudiante();
+	System.out.println(carlos);
+}
+}

@@ -1,0 +1,11 @@
+package Modelo.Refactoriza;
+
+public class Estudiante extends PersonaRefactoriza implements IAccion{
+
+	@Override
+	public void ejecutaAccion() {
+		// TODO Auto-generated method stub
+		System.out.println("Estudiante que estudia");
+	}
+	
+}

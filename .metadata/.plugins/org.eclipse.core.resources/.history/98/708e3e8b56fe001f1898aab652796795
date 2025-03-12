@@ -1,0 +1,12 @@
+package Modelo.Biblioteca;
+
+public class IPrestable {
+	
+	public boolean estaDisponible () {
+		return false;
+	}
+	
+	public int getDevuelveDiasPrestamo () {
+		return 0;
+	}
+}

@@ -1,0 +1,43 @@
+package Modelo.Biblioteca;
+
+public class Multimedia extends Recursos{
+	private String nombre;
+	private String generoLiterario;
+	private int diasPrestamos = 10;
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String getGeneroLiterario() {
+		return generoLiterario;
+	}
+	public void setGeneroLiterario(String generoLiterario) {
+		this.generoLiterario = generoLiterario;
+	}
+	public int getDiasPrestamos() {
+		return diasPrestamos;
+	}
+	public void setDiasPrestamos(int diasPrestamos) {
+		this.diasPrestamos = diasPrestamos;
+	}
+	public Multimedia(int id, String ubicacion, String nombre, String generoLiterario, int diasPrestamos) {
+		super(id, ubicacion);
+		this.nombre = nombre;
+		this.generoLiterario = generoLiterario;
+		this.diasPrestamos = diasPrestamos;
+	}
+	@Override
+	public boolean estaDisponible() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public int getDevuelveDiasPrestamo() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+}

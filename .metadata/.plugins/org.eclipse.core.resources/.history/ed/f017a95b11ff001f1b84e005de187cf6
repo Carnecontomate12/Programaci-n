@@ -1,0 +1,11 @@
+package Modelo.Biblioteca;
+
+public class Pelicula extends Multimedia{
+	private int duracionMinutos;
+
+	public int getDuracionMinutos() {
+		return duracionMinutos;
+	}
+	
+	
+}
