@@ -8,4 +8,5 @@
     <fullyQualifiedTypeName name="Ejemploenum.DiaDeLaSemana"/>
     <fullyQualifiedTypeName name="Contador.Persona"/>
     <fullyQualifiedTypeName name="Modelo.Animal"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
 </qualifiedTypeNameHistroy>
