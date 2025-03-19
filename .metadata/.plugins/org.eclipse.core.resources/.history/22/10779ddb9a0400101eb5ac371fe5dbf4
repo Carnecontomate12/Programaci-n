@@ -1,0 +1,8 @@
+package SimulacroExamen19Marzo;
+
+public class VehículoCombustible extends VehículoGeneral{
+	private String matricula;
+	private boolean diesel;
+	private String modelo;
+	private String marca;
+}

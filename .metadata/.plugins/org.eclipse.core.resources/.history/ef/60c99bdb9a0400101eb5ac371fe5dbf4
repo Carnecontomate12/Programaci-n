@@ -1,0 +1,14 @@
+package SimulacroExamen19Marzo;
+
+import java.time.LocalDate;
+
+public class Alquiler {
+	private int id;
+	private String datos;
+	private int permiso;
+	private String DNI_persona;
+	private LocalDate fechainicio;
+	private LocalDate fecharegistro;
+	private int dias;
+	private Estado estado;
+}

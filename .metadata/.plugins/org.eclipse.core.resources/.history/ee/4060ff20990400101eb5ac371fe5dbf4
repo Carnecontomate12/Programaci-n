@@ -1,0 +1,7 @@
+package SimulacroExamen19Marza;
+
+public abstract class VehículoGeneral {
+	private int id;
+	private boolean alquilado;
+	private
+}

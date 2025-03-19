@@ -1,0 +1,5 @@
+package SimulacroExamen19Marzo;
+
+public enum Estado {
+
+}

@@ -11,7 +11,9 @@ public class MainPrueba {
 		//catch (IOException e) {
 			//System.out.println("Ocurre una excepcion:" + e.getMessage());
 		//}
-		System.out.println("Llego aquí");
+		finally {
+			System.out.println("Llego aquí");
+		}
 	}
 	
 	

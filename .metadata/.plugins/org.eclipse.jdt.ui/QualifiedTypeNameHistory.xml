@@ -9,4 +9,6 @@
     <fullyQualifiedTypeName name="Contador.Persona"/>
     <fullyQualifiedTypeName name="Modelo.Animal"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
