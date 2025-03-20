@@ -1,0 +1,6 @@
+package Simulacro2examen19Marzo;
+
+public interface ICompeticion{
+	void competir();
+	float getTiempoPrueba();
+}

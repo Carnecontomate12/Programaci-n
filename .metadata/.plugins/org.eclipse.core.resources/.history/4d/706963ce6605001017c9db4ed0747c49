@@ -1,0 +1,10 @@
+package Simulacro2examen19Marzo;
+
+public class Nadador extends Deportista{
+
+	public Nadador(String nombre, String pais, float peso, float altura, Pruebas[] prueba) {
+		super(nombre, pais, peso, altura, prueba);
+		// TODO Auto-generated constructor stub
+	}
+
+}
