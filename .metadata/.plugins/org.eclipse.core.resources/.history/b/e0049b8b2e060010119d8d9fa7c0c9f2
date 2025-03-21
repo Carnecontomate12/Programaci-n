@@ -1,0 +1,10 @@
+package Simulacro3Examen21Marzo;
+
+public class Pilotos {
+	private String nombre;
+	private String nacionalidad;
+	private int edad;
+	private int num_licencia;
+	private Horas_vuelos [] vuelos;
+	private int vuelos_asignados;
+}

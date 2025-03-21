@@ -2,8 +2,8 @@ package Simulacro2examen19Marzo;
 
 public class Corredor extends Deportista{
 
-	public Corredor(String nombre, String pais, float peso, float altura, Pruebas[] prueba) {
-		super(nombre, pais, peso, altura, prueba);
+	public Corredor(String nombre, String pais, float peso, float altura) {
+		super(nombre, pais, peso, altura, 0);
 		// TODO Auto-generated constructor stub
 	}
 	@Override
