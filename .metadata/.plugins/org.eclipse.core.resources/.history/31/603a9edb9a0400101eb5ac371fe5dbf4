@@ -1,6 +1,0 @@
-package SimulacroExamen19Marzo;
-
-public abstract class VehículoGeneral {
-	private int id;
-	private boolean alquilado;
-}

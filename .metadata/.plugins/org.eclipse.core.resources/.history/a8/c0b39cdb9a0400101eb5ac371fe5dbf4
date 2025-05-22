@@ -1,6 +1,0 @@
-package SimulacroExamen19Marzo;
-
-public class Furgoneta extends VehículoCombustible{
-	private int numPlazas;
-	private int pma;
-}

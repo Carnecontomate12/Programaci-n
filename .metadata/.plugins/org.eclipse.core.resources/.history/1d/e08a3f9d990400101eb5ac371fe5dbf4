@@ -1,5 +1,0 @@
-package SimulacroExamen19Marzo;
-
-public class Furgoneta extends VehículoCombustible{
-
-}

@@ -3,76 +3,54 @@ package Simulacro3Examen21Marzo;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class Pilotos implements IVuelo{
-	private String nombre;
-	private String nacionalidad;
-	private int edad;
-	private int num_licencia;
-	private int horas_vuelos;
-	private Vuelo [] vuelos_asignados = new Vuelo [30];
+public class Pilotos implements IVuelo {
+	String nombre;
+	String nacionalidad;
+	int edad;
+	int numlicencia;
+	double horasvuelo;
+	Vuelo [] vuelos;
 	
-	
-	public Pilotos(String nombre, String nacionalidad, int edad, int num_licencia, int horas_vuelos,
-			Vuelo[] vuelos_asignados) {
-		super();
-		this.nombre = nombre;
-		this.nacionalidad = nacionalidad;
-		this.edad = edad;
-		this.num_licencia = num_licencia;
-		this.horas_vuelos = horas_vuelos;
-		this.vuelos_asignados = new Vuelo [30];
-	}
-
 	public String getNombre() {
 		return nombre;
 	}
-
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
 	public String getNacionalidad() {
 		return nacionalidad;
 	}
-
 	public void setNacionalidad(String nacionalidad) {
 		this.nacionalidad = nacionalidad;
 	}
-
 	public int getEdad() {
 		return edad;
 	}
-
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
-
-	public int getNum_licencia() {
-		return num_licencia;
+	public int getNumlicencia() {
+		return numlicencia;
 	}
-
-	public void setNum_licencia(int num_licencia) {
-		this.num_licencia = num_licencia;
+	public void setNumlicencia(int numlicencia) {
+		this.numlicencia = numlicencia;
 	}
-
-	
-
-	public int getHoras_vuelos() {
-		return horas_vuelos;
+	public double getHorasvuelo() {
+		return horasvuelo;
 	}
-
-	public void setHoras_vuelos(int horas_vuelos) {
-		this.horas_vuelos = horas_vuelos;
+	public void setHorasvuelo(double horasvuelo) {
+		this.horasvuelo = horasvuelo;
 	}
-
-	public Vuelo[] getVuelos_asignados() {
-		return vuelos_asignados;
+	public Vuelo[] getVuelos() {
+		return vuelos;
 	}
-
-	public void setVuelos_asignados(Vuelo[] vuelos_asignados) {
-		this.vuelos_asignados = vuelos_asignados;
+	public void setVuelos(Vuelo[] vuelos) {
+		this.vuelos = vuelos;
 	}
-
+	@Override
+	public int hashCode() {
+		return Objects.hash(numlicencia);
+	}
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -81,27 +59,50 @@ public class Pilotos implements IVuelo{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Pilotos other = (Pilotos) obj;
-		return num_licencia == other.num_licencia;
+		Piloto other = (Piloto) obj;
+		return numlicencia == other.numlicencia;
 	}
-	
+	public Piloto(String nombre, String nacionalidad, int edad, int numlicencia, double horasvuelo) {
+		super();
+		this.nombre = nombre;
+		this.nacionalidad = nacionalidad;
+		this.edad = edad;
+		this.numlicencia = numlicencia;
+		this.horasvuelo = horasvuelo;
+		this.vuelos = new Vuelo[30];
+	}
 	@Override
 	public String toString() {
-		return "Pilotos [nombre=" + nombre + ", nacionalidad=" + nacionalidad + ", edad=" + edad + ", num_licencia="
-				+ num_licencia + ", horas_vuelos=" + horas_vuelos + ", vuelos_asignados="
-				+ Arrays.toString(vuelos_asignados) + "]";
-	}
-
-	@Override
-	public void operarVuelo() {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public float getDuracionVuelo() {
-		// TODO Auto-generated method stub
-		return 0;
+		return "Piloto [nombre=" + nombre + ", nacionalidad=" + nacionalidad + ", edad=" + edad + ", numlicencia="
+				+ numlicencia + ", horasvuelo=" + horasvuelo + ", vuelos=" + Arrays.toString(vuelos) + "]";
 	}
 	
+	public void agregarvuelo(Vuelo v) throws Vueloexception {
+	    if (v.getDuracion() > 8 && this instanceof Comercial) {
+	        throw new Vueloexception("No puedes añadir un vuelo de más de 8 horas a un piloto comercial");
+	    }
+	    for (int i = 0; i < vuelos.length; i++) {
+	        if (v.equals(vuelos[i])) {
+	            throw new Vueloexception("No puedes agregar un vuelo ya existente");}
+	    }
+	    boolean vueloAñadido = false;
+
+	    for (int i = 0; i < vuelos.length; i++) {
+	        if (vuelos[i] == null && vueloAñadido != true) {
+	            vuelos[i] = v;
+	            vueloAñadido = true;
+	        }
+	    }
+	}
+	@Override
+	public void operarvuelo() {
+		if(this instanceof Comercial) {
+			System.out.println("Este es el metodo de un piloto comercial");
+		}else if(this instanceof Internacional) {
+			System.out.println("Este es el metodo de un piloto Internacional");
+
+		}
+	}
+
 	
 }
